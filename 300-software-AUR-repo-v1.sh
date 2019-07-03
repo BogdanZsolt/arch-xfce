@@ -32,7 +32,7 @@ sh AUR/install-temps-v*.sh
 
 echo "Installing category Internet"
 
-sh AUR/install-vivaldi-and-ffmeg-codecs-v*.sh
+sh AUR/install-google-chrome-v*.sh
 
 echo "Installing category System"
 
@@ -49,6 +49,7 @@ sh AUR/install-surfn-icons-git-v*.sh
 sh AUR/install-ttf-font-awesome-v*.sh
 sh AUR/install-ttf-mac-fonts-v*.sh
 sh AUR/install-xcursor-breeze-v*.sh
+sh AUR/install-wallpaper-archpaint2-v*.sh
 
 # these come always last
 

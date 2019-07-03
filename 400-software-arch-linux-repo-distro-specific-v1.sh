@@ -22,7 +22,6 @@ echo "DESKTOP SPECIFIC APPLICATIONS"
 
 echo "Installing category System"
 
-sudo pacman -S --noconfirm --needed dmenu
 sudo pacman -S --noconfirm --needed imagemagick
 sudo pacman -S --noconfirm --needed w3m 
 sudo pacman -S --noconfirm --needed xfce4-notifyd
