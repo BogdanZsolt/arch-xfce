@@ -43,5 +43,6 @@ let g:deoplete#enable_at_startup = 1
 
 filetype plugin on
 
+let mapleader = ","
 set number
 set cursorline
