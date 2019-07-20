@@ -1,0 +1,9 @@
+coc-css
+coc-eslint
+coc-git
+coc-html
+coc-json
+coc-pairs
+coc-python
+coc-tabnine
+coc-tsserver

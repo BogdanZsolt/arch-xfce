@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/shiru/.oh-my-zsh"
+export ZSH="/home/shiru/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -98,11 +98,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias confi="vim $HOME/.config/bspwm/bspwmrc"
-alias confk="vim $HOME/.config/sxhkd/sxhkdrc"
-alias nano="nano -l"
-alias upgrade="trizen -Suyy --noconfirm"
-alias update='sudo pacman -Suy --color auto'
+alias vim='nvim'
+alias update="sudo pacman -Suy --color auto"
+alias upgrade="trizen -Suy --noconfirm"
 alias add="trizen -S --noconfirm"
 alias mirror='sudo reflector --protocol https --latest 50 --number 20 --sort rate --save /etc/pacman.d/mirrorlist'
 alias orph='sudo pacman -Rns $(pacman -Qtdq)'
