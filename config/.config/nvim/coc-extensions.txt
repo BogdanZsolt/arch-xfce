@@ -7,3 +7,4 @@ coc-pairs
 coc-python
 coc-tabnine
 coc-tsserver
+coc-emmet
