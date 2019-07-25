@@ -25,6 +25,8 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "*****************************************************************************
 Plug 'scrooloose/nerdtree'
 Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tjammer/blayu.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-surround'
@@ -49,7 +51,15 @@ call plug#end()
 nmap <C-o> :NERDTreeToggle<CR>
 
 filetype plugin on
+syntax enable
 
 let mapleader = ","
 set number
+set relativenumber
 set cursorline
+
+"colors
+let g:airline_theme='luna'
+set termguicolors
+set background=dark
+colorscheme blayu
