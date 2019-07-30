@@ -24,8 +24,12 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "*****************************************************************************
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/neosnippet.vim' | Plug 'Shougo/neosnippet-snippets'
 Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'artur-shaik/vim-javacomplete2', { 'for': 'java' }
+Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
+Plug 'ap/vim-css-color'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tjammer/blayu.vim'
@@ -42,9 +46,19 @@ nmap <C-o> :NERDTreeToggle<CR>
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
+"Use smartcase
+let g:deoplete#enable_smart_case = 1
+"Set minimum syntax keyword length.
+let g:deoplete#sources#syntax#min_keyword_length = 2
+
+"Emmet config
+let g:user_emmet_leader_key=','
 
 "Autopairs config
 let g:AutoPairsFlyMode = 1
+
+"vim css color config
+let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 "basic config
 filetype plugin on
