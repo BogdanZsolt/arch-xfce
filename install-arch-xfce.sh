@@ -15,5 +15,7 @@ sh 400-software-arch-linux-repo-distro-specific-v1.sh
 sh 500-software-AUR-repo-distro-specific-v1.sh
 #sh 600-software-from-ArcoLinux-repo-v1.sh
 sh 700-installing-fonts-v2.sh
+sh 800-install-nvim-v1.sh
+sh 810-install-openbox_wm.sh
 sh 900-fix-microcode-error-v1.sh
 sh 910-fix-mouse-cursor-breeze-snow-v1.sh
