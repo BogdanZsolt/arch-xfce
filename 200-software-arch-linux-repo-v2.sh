@@ -50,6 +50,8 @@ sudo pacman -S --noconfirm --needed vlc
 echo "Installing category System"
 
 sudo pacman -S --noconfirm --needed arc-gtk-theme
+sudo pacman -S --noconfirm --needed adapta-gtk-theme
+sudo pacman -S --noconfirm --needed papirus-icon-theme
 sudo pacman -S --noconfirm --needed accountsservice
 sudo pacman -S --noconfirm --needed baobab
 sudo pacman -S --noconfirm --needed dconf-editor
