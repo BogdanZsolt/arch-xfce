@@ -8,7 +8,7 @@ export ZSH="/home/shiru/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -99,10 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias vim='nvim'
-alias update="sudo pacman -Suy --color auto"
-alias upgrade="trizen -Suy --noconfirm"
-alias add="trizen -S --noconfirm"
+alias update='sudo pacman -Suy --color auto'
+alias upgrade='trizen -Suy --noconfirm'
+alias add='trizen -S --noconfirm'
 alias mirror='sudo reflector --protocol https --latest 50 --number 20 --sort rate --save /etc/pacman.d/mirrorlist'
 alias orph='sudo pacman -Rns $(pacman -Qtdq)'
+alias remove='trizen -R --noconfirm'
 
 neofetch
