@@ -26,7 +26,6 @@ sudo pacman -S --noconfirm --needed galculator
 
 echo "Installing category Development"
 
-sudo pacman -S --noconfirm --needed atom
 sudo pacman -S --noconfirm --needed geany
 sudo pacman -S --noconfirm --needed meld
 #sudo pacman -S --noconfirm --needed
@@ -76,10 +75,6 @@ sudo pacman -S --noconfirm --needed lsb-release
 sudo pacman -S --noconfirm --needed mlocate
 sudo pacman -S --noconfirm --needed net-tools
 sudo pacman -S --noconfirm --needed noto-fonts
-sudo pacman -S --noconfirm --needed adapta-gtk-theme
-sudo pacman -S --noconfirm --needed matcha-gtk-theme 
-sudo pacman -S --noconfirm --needed papirus-icon-theme
-sudo pacman -S --noconfirm --needed maia-icon-theme
 sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed qt5ct
 sudo pacman -S --noconfirm --needed sane
