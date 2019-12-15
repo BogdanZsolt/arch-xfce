@@ -5,7 +5,7 @@ loadkeys hu
 timedatectl set-ntp true
 pacman -Syy
 pacman -S --noconfirm reflector  
-sudo reflector --protocol https --latest 50 --number 20 --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --protocol https --country Hungary --country Germany --country Netherland --latest 50 --number 20 --sort rate --save /etc/pacman.d/mirrorlist
 wipefs -a /dev/sda
 parted /dev/sda mklabel gpt
 sgdisk /dev/sda -n=1:0:+512M -t=1:ef00
@@ -19,7 +19,8 @@ mkdir /mnt/boot
 mkdir /mnt/home
 mount /dev/sda3 /mnt/home
 nano /etc/pacman.d/mirrorlist
-pacstrap /mnt base base-devel
+pacstrap /mnt base base-devel linux-lts linux-lts-headers linux-firmware
+pacstrap /mnt dhcpcd e2fsprogs inetutils man-db man-pages nano netctl s-nail usbutils 
 genfstab -U /mnt >> /mnt/etc/fstab
 ln -sf /mnt/usr/share/zoneinfo/Europe/Budapest /mnt/etc/localtime
 hwclock --systohc
@@ -49,7 +50,7 @@ cat << EOF >> /mnt/etc/hosts
 127.0.0.1 LucykaNotebook02.localdomain LucykaNotebook02
 EOF
 pacstrap /mnt networkmanager
-sed -i 's/HOOKS="base udev autodetect modconf block keyboard keymap filesystems fsck"/HOOKS="base udev autodetect modconf block keyboard keymap filesystems fsck shutdown"/' /mnt/etc/mkinitcpio.conf
+sed -i 's/HOOKS=(base udev autodetect modconf block filesystems keyboard fsck)/HOOKS=(base udev autodetect modconf block filesystems keyboard fsck shutdown)/g' /mnt/etc/mkinitcpio.conf
 nano /mnt/etc/mkinitcpio.conf
 cat << EOF > /mnt/root/archInstallPhase2.sh
 #!/bin/bash
@@ -101,7 +102,8 @@ echo makepkg -si >> /home/shiru/temp/archInstallPhase4.sh
 echo trizen -Suyy >> /home/shiru/temp/archInstallPhase4.sh
 echo trizen -S yay --noconfirm >> /home/shiru/temp/archInstallPhase4.sh
 echo sudo pacman -S xorg-server xorg-apps xorg-xinit xterm --noconfirm >> /home/shiru/temp/archInstallPhase4.sh
-echo sudo pacman -S xf86-video-intel --noconfirm >> /home/shiru/temp/archInstallPhase4.sh
+#echo sudo pacman -S xf86-video-intel --noconfirm >> /home/shiru/temp/archInstallPhase4.sh
+echo sudo pacman -S vulkan-intel --noconfirm >> /home/shiru/temp/archInstallPhase4.sh
 echo sudo mv /home/shiru/temp/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf >> /home/shiru/temp/archInstallPhase4.sh
 echo rm -rf /home/shiru/temp/trizen >> /home/shiru/temp/archInstallPhase4.sh 
 echo rm /home/shiru/temp/archInstallPhase4.sh >> /home/shiru/temp/archInstallPhase4.sh 
