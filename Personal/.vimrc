@@ -52,6 +52,8 @@ call plug#end()
 nmap <C-o> :NERDTreeToggle<CR>
 
 " Use deoplete.
+let g:python_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/usr/bin/python3'  
 let g:deoplete#enable_at_startup = 1
 "Use smartcase
 let g:deoplete#enable_smart_case = 1
