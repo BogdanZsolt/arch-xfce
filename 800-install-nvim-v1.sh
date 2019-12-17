@@ -7,7 +7,7 @@ sudo pacman -S --noconfirm --needed python2-pip python-pip npm
 sudo npm install -g neovim
 pip install --user pynvim
 pip2 install --user pynvim
-cp Personal/vim/.vimrc ~/.vimrc
+cp Personal/.vimrc ~/.vimrc
 [ -d $HOME"/.config/nvim" ] || mkdir -p $HOME"/.config/nvim"
 ln -s $HOME"/.vimrc" $HOME"/.config/nvim/init.vim"
 
