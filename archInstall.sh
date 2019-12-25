@@ -43,7 +43,7 @@ LC_TELEPHONE=hu_HU.UTF-8
 LC_TIME=hu_HU.UTF-8
 EOF
 echo KEYMAP=hu > /mnt/etc/vconsole.conf
-echo LucykaNotebook02 > /mnt/etc/hostname
+echo lucykanotebook02 > /mnt/etc/hostname
 cat << EOF >> /mnt/etc/hosts
 127.0.0.1 localhost
 ::1     localhost
@@ -83,8 +83,10 @@ chmod 766 /mnt/root/archInstallPhase2.sh
 cat << EOF > /mnt/root/archInstallPhase3.sh
 #!/bin/bash
 set -e
+echo >> /etc/pacman.conf 
 echo [multilib] >> /etc/pacman.conf
 echo Include = /etc/pacman.d/mirrorlist >> /etc/pacman.conf
+nmtui
 pacman -Suy
 pacman -S bash-completion --noconfirm
 useradd -m -g users -G audio,video,network,wheel,storage,rfkill -s /bin/bash shiru
