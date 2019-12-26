@@ -8,6 +8,7 @@ trizen -S --noconfirm --needed google-chrome
 trizen -S --noconfirm --needed code
 trizen -S --noconfirm --needed caffeine-ng-git
 trizen -S --noconfirm --needed tela-icon-theme-git
+trizen -S --noconfirm --needed pamac-aur
 trizen -S --noconfirm --needed ulaunch-git
 
 sudo pacman -S --noconfirm --needed xfce4-goodies
