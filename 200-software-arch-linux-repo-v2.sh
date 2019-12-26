@@ -11,6 +11,8 @@ trizen -S --noconfirm --needed tela-icon-theme-git
 trizen -S --noconfirm --needed pamac-aur
 trizen -S --noconfirm --needed ulaunch-git
 
+sh AUR/install-spotify-v1.sh
+
 sudo pacman -S --noconfirm --needed xfce4-goodies
 sudo pacman -S --noconfirm --needed adapta-gtk-theme
 sudo pacman -S --noconfirm --needed arc-gtk-theme
