@@ -3,13 +3,14 @@ set -e
 
 trizen -S --noconfirm --needed xfce4-places-plugin
 #trizen -S --noconfirm --needed xfce4-dockbarx-plugin
-trizen -S --noconfirm --needed brave-bin
+#trizen -S --noconfirm --needed brave-bin
+trizen -S --noconfirm --needed chromium-widevine
 trizen -S --noconfirm --needed google-chrome
 trizen -S --noconfirm --needed code
 trizen -S --noconfirm --needed caffeine-ng-git
 trizen -S --noconfirm --needed tela-icon-theme-git
 trizen -S --noconfirm --needed pamac-aur
-trizen -S --noconfirm --needed ulaunch-git
+#trizen -S --noconfirm --needed ulauncher-git
 
 sh AUR/install-spotify-v1.sh
 
@@ -24,10 +25,12 @@ sudo pacman -S --noconfirm --needed noto-fonts
 #sudo pacman -S --noconfirm --needed plank
 sudo pacman -S --noconfirm --needed archlinux-wallpaper
 
+sudo pacman -S --noconfirm --needed chromium
 sudo pacman -S --noconfirm --needed accountsservice
 sudo pacman -S --noconfirm --needed gnome-keyring
 sudo pacman -S --noconfirm --needed dconf-editor
 sudo pacman -S --noconfirm --needed reflector 
+sudo pacman -S --noconfirm --needed wavemon
 sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed htop

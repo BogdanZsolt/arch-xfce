@@ -8,8 +8,8 @@ sudo npm install -g neovim
 sudo npm install -g yarn
 sudo npm install -g browser-sync
 
-#export SERVER_IP=`hostname -I`
-#alias serve="browser-sync start --server --files . --no-notify --host $SERVER_IP --port 9000"
+#export SERVER_IP=`hostname -i`
+#alias serve="browser-sync start --server --files . --no-notify --host $SERVER_IP --port 5000 --browser google-chrome-stable"
 
 pip install --user pynvim
 pip2 install --user pynvim
