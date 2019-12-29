@@ -57,7 +57,9 @@ cat << EOF > /mnt/root/archInstallPhase2.sh
 set -e
 locale-gen
 systemctl enable NetworkManager
-pacman -S network-manager-applet xfce4-notifyd --noconfirm
+pacman -S network-manager-applet modemmanager mobile-broadband-provider-info nm-connection-editor --noconfirm
+#pacman -S xfce4-notifyd --noconfirm --needed
+systemctl enable ModemManager.service
 passwd
 pacman -S grub efibootmgr --noconfirm
 mkdir /boot/efi
