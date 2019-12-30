@@ -1,18 +1,17 @@
 #!/bin/bash
 set -e
 
-trizen -S --noconfirm --needed xfce4-places-plugin
-#trizen -S --noconfirm --needed xfce4-dockbarx-plugin
-#trizen -S --noconfirm --needed brave-bin
-trizen -S --noconfirm --needed chromium-widevine
-trizen -S --noconfirm --needed google-chrome
-trizen -S --noconfirm --needed code
-trizen -S --noconfirm --needed caffeine-ng-git
-trizen -S --noconfirm --needed tela-icon-theme-git
-trizen -S --noconfirm --needed pamac-aur
-#trizen -S --noconfirm --needed ulauncher-git
-
+sh AUR/install-xfce4-places-plugin-v1.sh
+#sh AUR/install-xfce4-dockbarx-plugin-v1.sh
 sh AUR/install-spotify-v1.sh
+sh AUR/install-caffeine-ng-v1.sh
+sh AUR/install-pamac-aur-v1.sh
+sh AUR/install-code-v1.sh
+sh AUR/install-tela-icon-theme-git-v1.sh
+sh AUR/install-google-chrome-v1.sh
+#sh AUR/install-brave-bin-v1.sh
+sh AUR/install-chromium-widevine-v1.sh
+sh AUR/install-ulauncher-v1.sh
 
 sudo pacman -S --noconfirm --needed xfce4-goodies
 sudo pacman -S --noconfirm --needed adapta-gtk-theme
@@ -22,7 +21,7 @@ sudo pacman -S --noconfirm --needed papirus-icon-theme
 sudo pacman -S --noconfirm --needed ttf-ubuntu-font-family
 sudo pacman -S --noconfirm --needed ttf-droid
 sudo pacman -S --noconfirm --needed noto-fonts
-#sudo pacman -S --noconfirm --needed plank
+sudo pacman -S --noconfirm --needed plank
 sudo pacman -S --noconfirm --needed archlinux-wallpaper
 
 sudo pacman -S --noconfirm --needed chromium
