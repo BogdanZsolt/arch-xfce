@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/shiru/.oh-my-zsh"
+export SERVER_IP=`hostname -i`
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -109,6 +110,7 @@ alias install="sudo pacman -S --noconfirm"
 alias remove="sudo pacman -R --noconfirm"
 alias mirror="sudo reflector --protocol https --country Hungary --country Germany --country Netherland --latest 50 --number 20 --sort rate --save /etc/pacman.d/mirrorlist"
 alias orph='sudo pacman -Rns $(pacman -Qtdq)'
+alias serve="browser-sync start --server --files . --no-notify --host $SERVER_IP --port 5000 --browser google-chrome-stable"
 
 neofetch
 
