@@ -32,6 +32,8 @@ sudo pacman -S --noconfirm --needed firefox
 echo "Installing category Multimedia"
 
 sh AUR/install-spotify-v*.sh
+sudo pacman -S --noconfirm --needed krita
+sudo pacman -S --noconfirm --needed kdenlive
 sudo pacman -S --noconfirm --needed simplescreenrecorder
 sudo pacman -S --noconfirm --needed vlc
 

@@ -11,6 +11,7 @@ trizen -S --noconfirm --needed appmenu-gtk-module-git
 sudo pacman -S --noconfirm --needed libdbusmenu-glib libdbusmenu-gtk3 libdbusmenu-gtk2
 sudo pacman -U --noconfirm --needed vala-panel-appmenu-common-git-*.pkg.tar.xz
 sudo pacman -U --noconfirm --needed vala-panel-appmenu-xfce-git-*.pkg.tar.xz
+xfconf-query -c xsettings -p /Gtk/Modules -n -t string -s "appmenu-gtk-module"
 xfconf-query -c xsettings -p /Gtk/ShellShowsMenubar -n -t bool -s true
 xfconf-query -c xsettings -p /Gtk/ShellShowsAppmenu -n -t bool -s true
 rm -rf ~/temp/vala-panel-appmenu-xfce-git
