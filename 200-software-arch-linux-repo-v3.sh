@@ -39,12 +39,13 @@ echo "Installing category Other"
 
 echo "Installing category System"
 
+git clone https://github.com/erikdubois/plankthemes ~/.local/share/plank/themes
 #sh AUR/install-ulauncher-v*.sh
 sh AUR/install-caffeine-ng-v*.sh
 sh AUR/install-pamac-aur-v*.sh
 #sh AUR/install-xfce4-places-plugin-v*.sh
 #sh AUR/install-xfce4-dockbarx-plugin-v*.sh
-#sh AUR/install-vala-panel-appmenu-xfce-git-v*.sh
+sh AUR/install-vala-panel-appmenu-xfce-git-v*.sh
 sh AUR/install-tela-icon-theme-git-v*.sh
 sh AUR/install-inxi-v*.sh
 sh AUR/install-screenkey-git-v*.sh
