@@ -17,6 +17,9 @@ cp Personal/.vimrc $HOME"/.vimrc"
 [ -d $HOME"/.config/nvim" ] || mkdir -p $HOME"/.config/nvim"
 ln -s $HOME"/.vimrc" $HOME"/.config/nvim/init.vim"
 
+sed -i '/export ZSH="\/home\/shiru\/.oh-my-zsh"/a export SERVER_IP=`hostname -i`\n# valami mas' ~/.zshrc
+sed -i '/alias update="sudo pacman -Syy"/i alias vim="nvim"\nalias serve="browser-sync start --server --files . --no-notify --host $SERVER_IP --port 5000 --browser google-chrome-stable"' ~/.zshrc
+
 ##########################################################################################
 #                                                                                        #
 #                             NeoVim                                                     #

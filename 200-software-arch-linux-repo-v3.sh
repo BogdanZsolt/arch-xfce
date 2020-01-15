@@ -13,13 +13,13 @@ sudo pacman -S --noconfirm --needed plank
 echo "Installing category Development"
 
 sh AUR/install-code-v*.sh
-sh AUR/install-sublime-text-v*.sh
-sudo pacman -S --noconfirm --needed atom
+#sh AUR/install-sublime-text-v*.sh
+#sudo pacman -S --noconfirm --needed atom
 
 echo "Installing category Graphics"
 
-sudo pacman -S --noconfirm --needed inkscape
-sudo pacman -S --noconfirm --needed ristretto
+#sudo pacman -S --noconfirm --needed inkscape
+#sudo pacman -S --noconfirm --needed ristretto
 
 echo "Installing category Internet"
 
@@ -31,9 +31,9 @@ sudo pacman -S --noconfirm --needed firefox
 
 echo "Installing category Multimedia"
 
-sh AUR/install-spotify-v*.sh
-sudo pacman -S --noconfirm --needed krita
-sudo pacman -S --noconfirm --needed kdenlive
+#sh AUR/install-spotify-v*.sh
+#sudo pacman -S --noconfirm --needed krita
+#sudo pacman -S --noconfirm --needed kdenlive
 sudo pacman -S --noconfirm --needed simplescreenrecorder
 sudo pacman -S --noconfirm --needed vlc
 
@@ -43,11 +43,12 @@ echo "Installing category System"
 
 git clone https://github.com/erikdubois/plankthemes ~/.local/share/plank/themes
 #sh AUR/install-ulauncher-v*.sh
+#sh AUR/install-appimagelauncher-v*.sh
 sh AUR/install-caffeine-ng-v*.sh
 sh AUR/install-pamac-aur-v*.sh
 #sh AUR/install-xfce4-places-plugin-v*.sh
 #sh AUR/install-xfce4-dockbarx-plugin-v*.sh
-sh AUR/install-vala-panel-appmenu-xfce-git-v*.sh
+#sh AUR/install-vala-panel-appmenu-xfce-git-v*.sh
 sh AUR/install-tela-icon-theme-git-v*.sh
 sh AUR/install-inxi-v*.sh
 sh AUR/install-screenkey-git-v*.sh
