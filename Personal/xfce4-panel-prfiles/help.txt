@@ -1,0 +1,1 @@
+bzs_20200117_1.tar.bz2 --> ~/.local/share/xfce4-panel-profiles/.
