@@ -48,7 +48,7 @@ sh AUR/install-downgrade-v*.sh
 sh AUR/install-caffeine-ng-v*.sh
 sh AUR/install-pamac-aur-v*.sh
 #sh AUR/install-xfce4-places-plugin-v*.sh
-#sh AUR/install-xfce4-dockbarx-plugin-v*.sh
+sh AUR/install-xfce4-dockbarx-plugin-v*.sh
 #sh AUR/install-vala-panel-appmenu-xfce-git-v*.sh
 sh AUR/install-tela-icon-theme-git-v*.sh
 sh AUR/install-inxi-v*.sh
