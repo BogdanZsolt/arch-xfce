@@ -37,6 +37,6 @@ sudo systemctl set-default graphical.target
 sh AUR/install-lightdm-slick-greeter-v1.sh
 sh AUR/install-lightdm-settings-v1.sh
 
-#if pacman -Qi $package &> /dev/null; then
-    #sudo sed -i 's/#greeter-session=/greeter-session=lightdm-slick-greeter/g' /etc/lightdm/lightdm.conf
-#fi
+if pacman -Qi $package &> /dev/null; then
+    sudo sed -i 's/#greeter-session=/greeter-session=lightdm-slick-greeter/g' /etc/lightdm/lightdm.conf
+fi
