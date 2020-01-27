@@ -43,7 +43,7 @@ echo "Installing category System"
 
 git clone https://github.com/erikdubois/plankthemes ~/.local/share/plank/themes
 #sh AUR/install-ulauncher-v*.sh
-#sh AUR/install-appimagelauncher-v*.sh
+sh AUR/install-appimagelauncher-v*.sh
 sh AUR/install-downgrade-v*.sh
 sh AUR/install-caffeine-ng-v*.sh
 sh AUR/install-pamac-aur-v*.sh
