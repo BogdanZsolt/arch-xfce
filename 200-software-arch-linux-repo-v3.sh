@@ -31,7 +31,7 @@ sudo pacman -S --noconfirm --needed firefox
 
 echo "Installing category Multimedia"
 
-#sh AUR/install-spotify-v*.sh
+sh AUR/install-spotify-v*.sh
 #sudo pacman -S --noconfirm --needed krita
 #sudo pacman -S --noconfirm --needed kdenlive
 sudo pacman -S --noconfirm --needed simplescreenrecorder
@@ -48,7 +48,7 @@ sh AUR/install-downgrade-v*.sh
 sh AUR/install-caffeine-ng-v*.sh
 sh AUR/install-pamac-aur-v*.sh
 #sh AUR/install-xfce4-places-plugin-v*.sh
-sh AUR/install-xfce4-dockbarx-plugin-v*.sh
+#sh AUR/install-xfce4-dockbarx-plugin-v*.sh
 #sh AUR/install-vala-panel-appmenu-xfce-git-v*.sh
 sh AUR/install-tela-icon-theme-git-v*.sh
 sh AUR/install-inxi-v*.sh
